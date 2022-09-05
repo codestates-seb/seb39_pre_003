@@ -48,7 +48,7 @@ const handleQuestionSubmit = async () => {
       } else {
         alert("질문을 등록하였습니다.");
         localStorage.setItem("key", data.questionId);
-        location.href = "boardDetail.html";
+        location.href = "boardMain.html";
       }
     });
 };
@@ -84,7 +84,7 @@ const handleQuestionModify = async () => {
       if (data === "질문 수정 실패") {
         alert(data);
       } else {
-        location.href = "boardDetail.html";
+        location.href = "boardMain.html";
       }
     });
 };

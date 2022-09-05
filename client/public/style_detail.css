@@ -3,11 +3,19 @@
   width: calc(100% - 164px);
   padding: 24px 16px;
   min-width: 660px;
+  display: block;
+}
+#qd_container_boardMain {
+  max-width: 1100px;
+  width: calc(100% - 164px);
+  padding: 24px 16px;
+  min-width: 660px;
+  display: flex;
 }
 
 .qd_upper_main_wrapper {
   display: flex;
-  height: 100%;
+  width: 100%;
   justify-content: space-between;
   align-items: stretch;
 }
@@ -47,7 +55,9 @@
   margin-left: 12px;
   height: 100%;
 }
-
+#qd_ask_buton:hover {
+  background-color: #0074cc;
+}
 /* lower div 시작 */
 #qd_lower_container {
   display: flex;
@@ -251,4 +261,21 @@
   padding: 0px 16px;
   font-size: 13px;
   background-color: #fdf7e2;
+}
+
+.qd_lower_info_users {
+  margin: 4px 0px;
+  padding: 5px 6px 7px 7px;
+  font-size: 12px;
+  background-color: #d9e9f7;
+  border-radius: 0.5em;
+  width: 200px;
+}
+
+.qd_lower_info_users_time {
+  margin: 1px 0px 4px 0px;
+  color: #7d8790;
+}
+.qd_lower_info_users_details_name {
+  margin-left: 8px;
 }

@@ -1,5 +1,5 @@
 *{
-    /* box-sizing: border-box; */
+    box-sizing: border-box;
 }
 /* 메인 페이지 */
 .maincontainer {
@@ -36,8 +36,6 @@
     flex-direction: column;
     align-items: center;
 
-    width: 90vw;
-    height: 900px;
     margin-bottom: -128px;
     padding: 32px 32px 128px 32px;
     border-radius: 10px;
@@ -46,17 +44,22 @@
     background: linear-gradient(#232729, #444A4F);
 }
     /* s1 박스 */
+
 .s1obbox {
-    width: 808px;
-    height: 302px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.divobbox{
+    padding: 16px;
 
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
 }
 .obox {
     width: 302px;
-    height: 270px;
+    height: 340px;
     padding: 16px;
     border-radius: 10px;
 
@@ -68,9 +71,14 @@
     flex-direction: column;
     align-items: center;
 }
-
+.obsvg{
+    width: 48px;
+    height: 48px;
+}
 .obtext{
     text-align : center;
+    font-family: sans-serif;
+    font-size: 19px;
 }
 .joinbutton{
     border: 1px;
@@ -85,20 +93,22 @@
 }
 .bbox {
     width: 302px;
-    height: 270px;
+    height: 340px;
     padding: 16px;
     border-radius: 10px;
 
     background-color: #CDE9FE;
 }
-.bbcontent{
+/* .bbcontent{
     padding: 24px;
     display: flex;
     flex-direction: column;
     align-items: center;
-}
+} */
 .bbtext{
     text-align : center;
+    font-family: sans-serif;
+    font-size: 19px;
 }
 .getstarted{
     margin: 0px 56px 12px 56px;
@@ -143,15 +153,19 @@
 
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     align-items: center;
 
     text-align: center;
     color: #F8F9F9;
     white-space: pre-line;
-    font-size: xx-large;
+    font-size: 55px;
+    font-family: serif;
 }
 .s1text2{
+    margin: 0px 20px;
     color: #F2730E;
+    font-family: serif;
 }
 .s1gbardesign{
     width: 64px;
@@ -170,7 +184,6 @@
     align-items: center;
 }
 .s1int{
-    height: 90px;
     padding: 32px;
 
     display: flex;
@@ -189,6 +202,8 @@
     padding-left: 24px;
     padding-right: 24px;
 
+    font-family: sans-serif;
+    font-size: small;
     text-align : center;
     color: #9FA6AC;
 }
@@ -209,7 +224,7 @@
     padding: 16px;
 }
 .s2lboxdesign{
-    height: 700px;
+    height: 900px;
     padding: 48px 0px;
     border-radius: 10px;
     position: relative;
@@ -230,26 +245,29 @@
     z-index: 1;
 }
 .s2img{
-    width: 70%;
-    height: 40%;
+    width: 80%;
+    height: 50%;
     margin: 32px 0px;
 }
 .s2text1{
     margin: 0px 48px 12px 48px;
     text-align: center;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: sans-serif;
+    font-weight: bolder;
+    font-size: 27px;
 }
 .s2text2{
     margin: 0px 48px 32px 48px;
     text-align: center;
-    font-size: large;
+    font-family: sans-serif;
+    font-size: 19px;
     color: #51595F;
 }
 .s2rbox{
     padding: 16px;
 }
 .s2rboxdesign{
-    height: 700px;
+    height: 900px;
     padding: 48px 0px;
     border-radius: 10px;
     position: relative;
@@ -282,8 +300,12 @@
     padding: 0px 64px;
 
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
+}
+.s3carouselimg{
+    padding: 0px 16px;
+    margin: 0px 12px;
 }
 .s3carouselbar{
     padding: 12px 0px;
@@ -347,7 +369,7 @@
     flex-direction: column;
     align-items: center;
 
-    background: linear-gradient(#222629, #464C52);
+    background: linear-gradient(#100f0f, #464C52);
 }
 .s4content1{
     padding-top: 24px;
@@ -356,7 +378,15 @@
     flex-direction: column;
     align-items: center;
 }
-.s4svg{}
+.s4svg{
+    width: 186px;
+    height: 45px;
+    margin-bottom: 32px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
 .s4c1text1{
     margin: 0px 43px 32px 43px;
 
@@ -388,7 +418,7 @@
 .s4c1intitem1{
     width: 18px;
     height: 18px;
-    padding-bottom: 12px;
+    margin-bottom: 12px;
 
     fill: #5EBA7D;
 }
@@ -476,12 +506,11 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
 }
 .s6box{
     padding: 24px;
-    width: 260px;
-    height: 330px;
+    width: 290px;
 
     display: flex;
     flex-direction: column;
@@ -490,17 +519,21 @@
 .s6box1{
     width: 48px;
     height: 48px;
+    margin-bottom: 16px;
 
     fill: #0B95FE;
 }
 .s6box2{
     margin-bottom: 32px;
+
+    color: #51595F;
 }
 .s6box3{
     padding-top: 16px;
     border-top-style: solid;
     border-color: #E3E6E8;
 
+    color: #51595F;
     white-space: pre-line;
 }
 /* 섹션 7 */
@@ -515,6 +548,8 @@
     margin-bottom: 12px;
     border-bottom: 1px;
     padding-bottom: 32px;
+    border-bottom-style: solid;
+    border-bottom-color: #cecece;
 }
 .s7topsvg{
     width: 187px;
@@ -553,8 +588,9 @@
     margin-bottom: 24px;
 }
 .s7boxcontent{
+    white-space: pre-line;
     text-align: center;
-    color: #9DA0A2;
+    color: #76797b;
 }
 .s7text2{
     border: 1px;
@@ -594,6 +630,10 @@
 }
 .s8icon{
     margin-bottom: 32px;
+    padding-bottom: 32px;
+    border-bottom-style: solid;
+    border-bottom-color: #466c91;
+    
     font-size: larger;
     font-weight: bold;
     color: #FFFFFF;
@@ -625,7 +665,6 @@
     height: 50px;
     margin: 32px 0px;
     padding: 32px 0px;
-
     display: flex;
     flex-direction: row;
     justify-content: center;

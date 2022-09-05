@@ -87,6 +87,9 @@ nav {
   text-align: left;
   margin-left: 5px;
 }
+.name:hover {
+  color: blue;
+} 
 /*네비 영역 종료*/
 
 /* main css 영역 시작 */
@@ -598,3 +601,42 @@ main {
   display: none;
 }
 /* 게시글 */
+
+/*ask*/
+#ask_container {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 800px;
+}
+@media (min-width: 1400px) {
+  #ask_container {
+    width: 1300px;
+  }  
+}
+@media (max-width: 1399px) {
+  #ask_container {
+    width: 1140px;
+  }  
+}
+@media (max-width: 1199px) {
+  #ask_container {
+    width: 960px;
+  }  
+}
+@media (max-width: 991px) {
+  #ask_container {
+    width: 720px;
+  }  
+  .membericon, .name, #sighupButton, #loginButton {
+    display: none;
+  }
+}
+@media (max-width: 767px) {
+  #ask_container {
+    width: 100%;
+  }  
+  .membericon, .name, #sighupButton, #loginButton, .form-control{
+    display: none;
+  }
+}

@@ -30,7 +30,7 @@ const handleLogin = async () => {
         localStorage.setItem("email", data.email);
         localStorage.setItem("name", data.name);
         localStorage.setItem("img", data.profile_image);
-        location.href = "boardMainLogin.html";
+        location.href = "boardMain.html";
       }
     });
 };
@@ -40,8 +40,4 @@ const handleLogout = () => {
   localStorage.clear();
 };
 
-//디테일 이동 테스트용
-const handleDetail = () => {
-  localStorage.setItem("key", 1);
-  location.href = "boardDetail.html";
-};
+
